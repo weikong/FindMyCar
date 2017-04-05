@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/view_select"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorAccent"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_anim"
+            android:layout_toRightOf="@+id/view_select"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text=""
+                android:textColor="@color/color_f4f4f4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_singer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text=""
+                android:textColor="@color/color_f4f4f4" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="6dp"
+            android:src="@drawable/anim_sound_playing"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignRight="@+id/iv_anim"
+            android:layout_below="@+id/layout_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/bg_color"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</LinearLayout>

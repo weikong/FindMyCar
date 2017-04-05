@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_contact_free_call_nol"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="40dp"
+        android:ellipsize="end"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:text="成都天府软件园D区"
+        android:textColor="@color/color_f4f4f4"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_right_arrow"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_off_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:padding="4dp"
+        android:src="@drawable/switching_off"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="35dp"
+        android:background="@color/color_cfceca" />
+</RelativeLayout>

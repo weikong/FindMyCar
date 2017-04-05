@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="空气指数："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_air_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="213"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="空气质量："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_air_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="严重污染"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="穿衣指数："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_dress_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="夹衣类"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="感冒指数："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_cold_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="低发期"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="运动指数："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_exercise_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="比较适宜"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="日出日落："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_sun_rise_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="07:21 ~ 18:13"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="今日限行："
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_car_forbid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="尾号（0,5）"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_future"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="80dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_future_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:text="今天\n18~13"
+            android:textColor="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_future_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:text="今天\n18~13"
+            android:textColor="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_future_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:text="今天\n18~13"
+            android:textColor="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_future_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:text="今天\n18~13"
+            android:textColor="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_future_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:text="今天\n18~13"
+            android:textColor="@color/color_f4f4f4" />
+
+        <TextView
+            android:id="@+id/tv_future_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:lineSpacingExtra="2dp"
+            android:text="今天\n18~13"
+            android:textColor="@color/color_f4f4f4" />
+    </LinearLayout>
+</LinearLayout>

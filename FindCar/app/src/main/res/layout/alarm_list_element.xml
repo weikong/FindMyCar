@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Copyright 2014 Sheldon Neilson www.neilson.co.za
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/layout_check"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_alarm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_242322"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_alarm_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_666666" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <CheckBox
+                android:id="@+id/checkBox_alarm_active"
+                android:layout_width="37dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_check_alarm_selector"
+                android:button="@null"
+                android:checked="true"
+                android:focusable="false"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/color_666666" />
+
+</LinearLayout>

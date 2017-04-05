@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_bg_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_sunny_night" />
+
+    <RelativeLayout
+        android:id="@+id/layout_top_air"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_ffffff" />
+
+        <ImageView
+            android:id="@+id/iv_progress"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_below="@+id/tv_city"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:alpha="0.0"
+            android:src="@drawable/type_two_sunny"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_city"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_ffffff"
+            android:textSize="70sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_temperature"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top_air">
+
+        <com.king.smart.car.mysmartcarapp.ui.view.NavigationBarView
+            android:id="@+id/layout_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_navigation"></android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/acx150">
+
+        <TextView
+            android:id="@+id/tvPartCar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_circle_red_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="P"
+            android:textColor="@color/color_ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

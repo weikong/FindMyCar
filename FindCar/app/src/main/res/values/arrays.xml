@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="main_items_name">
+        <item>@string/navigation_item_tips</item>
+        <item>@string/navigation_item_navigation</item>
+        <item>@string/navigation_item_lock</item>
+        <item>@string/navigation_item_music</item>
+        <item>@string/navigation_item_tool</item>
+    </string-array>
+
+    <array name="main_items_icon">
+        <item>@drawable/ic_contact_sticker_nol</item>
+        <item>@drawable/ic_contact_location_nol</item>
+        <item>@drawable/ic_contact_location_press</item>
+        <item>@drawable/ic_contact_music_nol</item>
+        <item>@drawable/ic_contact_doodle_nol</item>
+    </array>
+
+    <string-array name="_items_tools">
+        <item>@string/item_tool_contact</item>
+        <item>@string/item_tool_flashlight</item>
+        <item>@string/item_tool_bluetooth</item>
+        <item>@string/item_tool_camera</item>
+        <item>@string/item_tool_photo</item>
+        <item>@string/item_tool_voice</item>
+        <item>@string/item_tool_alarm</item>
+        <item>@string/item_tool__track_show</item>
+        <!--<item>@string/item_tool_video</item>-->
+        <!--<item>@string/item_tool_game</item>-->
+    </string-array>
+</resources>

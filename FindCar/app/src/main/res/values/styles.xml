@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <!--<style name="AppTheme" parent="AppBaseTheme">
+        &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+    </style>-->
+
+    <!-- <style name="ActivityTheme" parent="@android:style/Theme.Light">
+         &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+         &lt;!&ndash;<item name="android:windowIsTranslucent">true</item>
+         <item name="android:windowNoTitle">true</item>
+         <item name="android:windowContentOverlay">@null</item>&ndash;&gt;
+     </style>-->
+    <style name="ActivityWelTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/color_bg_weather</item>
+    </style>
+
+    <!--<style name="ActivityTheme" parent="@android:style/Theme.NoTitleBar">
+        &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>-->
+
+    <!--<style name="ActivityWelTheme" parent="@android:style/Theme.Light">-->
+    <!--<item name="android:windowBackground">@color/color_bg_weather</item>-->
+    <!--</style>-->
+
+    <style name="ActivityTheme" parent="Theme.AppCompat.Light">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="colorPrimary">@color/color_bg_weather</item>
+        <item name="colorPrimaryDark">@color/color_000000</item>
+        <item name="colorAccent">@color/color_bg_weather</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TransparentText">
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/color_bg_weather</item>
+        <item name="colorPrimaryDark">@color/color_bg_weather</item>
+        <item name="colorAccent">@color/color_bg_weather</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>-->
+
+    <style name="Dialog_loading_noDim" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 没有标题 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景是否半透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 背景是否模糊 -->
+    </style>
+
+    <style name="Dialog_input" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 没有标题 -->
+        <item name="android:windowBackground">@color/color_transparent</item>
+        <!--背景颜色-->
+    </style>
+
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+</resources>

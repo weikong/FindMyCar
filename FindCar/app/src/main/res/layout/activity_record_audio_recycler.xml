@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_000000">
+
+    <RelativeLayout
+        android:id="@+id/layout_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_record_bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_record_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.king.smart.car.mysmartcarapp.ui.view.RecordAudioView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.king.smart.car.mysmartcarapp.ui.view.RecordAudioView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

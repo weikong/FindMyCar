@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_d9261b">#D9261B</color>
+
+    <color name="app_page_bkg">#fff5f5f5</color>
+    <color name="actionbar_bg_color">#53bc68</color>
+    <color name="color_8fc49a">#8fc49a</color>
+    <color name="activity_bg_color">#F4F4F4</color>
+    <color name="bg_color">#cccccc</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_transparent">#00ffffff</color>
+    <color name="color_323232">#323232</color>
+
+    <color name="colorCityDay">#5c8392</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+
+    <color name="color_242322">#242322</color>
+    <color name="color_eceef1">#eceef1</color>
+    <color name="color_727171">#727171</color>
+    <color name="color_3dbe8a">#3dbe8a</color>
+    <color name="color_333dbe8a">#333dbe8a</color>
+    <color name="color_cfceca">#cfceca</color>
+
+    <color name="color_bg_weather_top">#23466C</color>
+    <color name="color_bg_weather_mid">#2F556C</color>
+    <color name="color_bg_weather_bottom">#3B636D</color>
+    <color name="color_bg_weather">#01A8D3</color>
+    <color name="color_CD3D3A">#CD3D3A</color>
+
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="title_background_color">#000000</color>
+    <color name="color_99666666">#99666666</color>
+    <color name="color_544e44">#464544</color>
+    <color name="color_219AE6">#219AE6</color>
+    <color name="color_00ff00">#00ff00</color>
+
+</resources>

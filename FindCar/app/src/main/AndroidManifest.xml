@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.king.smart.car.mysmartcarapp">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 加入读写联系人信息的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 加入拨号的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--加入手電筒权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ActivityWelTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wqnkGscildZYkw0B6pFxaubehzve9GuC" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <activity
+            android:name=".ui.run.WelRunActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+        <activity
+            android:name=".ui.activity.WelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityWelTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SmartCarActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name=".ui.activity.ChoiceCityActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name=".ui.activity.BMapApiDemoMain"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".ui.activity.RoutePlanDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".ui.activity.LocalRouteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".ui.activity.LocationDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name=".ui.activity.RecordAudioRecyclerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"></activity>
+        <activity
+            android:name=".ui.activity.RecordAudioActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"></activity>
+        <activity
+            android:name=".ui.activity.MusicPlayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"></activity>
+        <activity
+            android:name=".ui.activity.TrackShowDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActivityTheme"></activity>
+
+
+        <!--闹铃-->
+        <activity
+            android:name="com.king.smart.car.mysmartcarapp.ui.alarm.AlarmActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name=".ui.alarm.preferences.AlarmPreferencesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.king.smart.car.mysmartcarapp.ui.alarm.AlarmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.king.smart.car.mysmartcarapp.ui.alarm.AlarmActivity" />
+        </activity>
+
+        <!-- android:process="com.king.smart.car.mysmartcarapp.ui.alarm.serviceProcess" -->
+        <service
+            android:name="com.king.smart.car.mysmartcarapp.ui.alarm.service.AlarmService"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:process="system"></service>
+
+        <receiver android:name="com.king.smart.car.mysmartcarapp.ui.alarm.service.AlarmServiceBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.king.smart.car.mysmartcarapp.ui.alarm.alert.AlarmAlertActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <receiver android:name="com.king.smart.car.mysmartcarapp.ui.alarm.alert.AlarmAlertBroadcastReciever"></receiver>
+        <receiver android:name="com.king.smart.car.mysmartcarapp.ui.alarm.telephony.PhoneStateChangedBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.run.RunMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".ui.run.RunTrainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

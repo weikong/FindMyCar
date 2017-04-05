@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">FinC</string>
+
+    <string name="txt_china">中国</string>
+    <string name="txt_sc">四川省</string>
+    <string name="action_return">返回</string>
+    <string name="action_cancle">取消</string>
+    <string name="action_confirm">确定</string>
+    <string name="action_setting">设置</string>
+    <string name="action_delete">删除</string>
+    <string name="action_save">保存</string>
+    <string name="action_edit">编辑</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="_fragment_tips">TipsFragment</string>
+    <string name="_fragment_navigation">NavigationFragment</string>
+    <string name="_fragment_lock">LockFragment</string>
+    <string name="_fragment_music">MusicFragment</string>
+    <string name="_fragment_tool">ToolFragment</string>
+    <string name="navigation_item_tips">天气</string>
+    <string name="navigation_item_navigation">导航</string>
+    <string name="navigation_item_lock">找车</string>
+    <string name="navigation_item_music">音乐</string>
+    <string name="navigation_item_tool">工具</string>
+
+    <string name="demo_title_route">路径规划功能--RoutePlanDemo</string>
+    <string name="demo_desc_route">介绍跨城交通、公交、驾车、步行、骑行五种线路规划方法及自定义图标方法</string>
+
+    <string name="item_tool_contact">电话簿</string>
+    <string name="item_tool_flashlight">手电筒</string>
+    <string name="item_tool_bluetooth">蓝牙</string>
+    <string name="item_tool_camera">相机</string>
+    <string name="item_tool_photo">相册</string>
+    <string name="item_tool_voice">录音</string>
+    <string name="item_tool_video">视频</string>
+    <string name="item_tool_alarm">闹铃</string>
+    <string name="item_tool_game">游戏</string>
+    <string name="item_tool__track_show">小车轨迹平滑移动</string>
+    <string name="item_tool_voice_record">录音记录</string>
+    <string name="item_tool_alarm_setting">设置闹铃</string>
+    <string name="txt_zai">在</string>
+    <string name="txt_input_hint_address">请输入地址</string>
+    <string name="txt_input_hint_fix_name">请输入题目</string>
+
+    <!-- Math Alarm Activity -->
+    <string name="title_activity_set_alarms">Set Alarm</string>
+    <string name="no_alarms">No alarms have been set</string>
+
+    <string name="button_new">New</string>
+
+    <!-- Menu -->
+    <string name="menu_item_new">New</string>
+    <string name="menu_item_save">Save</string>
+    <string name="menu_item_delete">Cancel</string>
+    <string name="menu_item_rate">Rate on Google Play</string>
+    <string name="menu_item_website">Website</string>
+    <string name="menu_item_report">Report a Bug</string>
+
+    <!-- Alert -->
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="decimal_button_text">,</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="minus_button_text">-</string>
+
+    <string name="button_delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/avc"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_circle_red"
+            android:gravity="center"
+            android:text="P"
+            android:textColor="@color/color_ffffff"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@+id/ivCheck"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_f4f4f4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_f4f4f4"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2016-11-04 15:59"
+                android:textColor="@color/color_f4f4f4"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ivCheck"
+            android:layout_alignRight="@+id/ivCheck"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_right_arrow"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_checkbox"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:background="@color/color_cfceca" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_000000">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_record_bottom">
+
+        <com.king.smart.car.mysmartcarapp.ui.view.TopActionBarView
+            android:id="@+id/view_top_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.king.smart.car.mysmartcarapp.ui.view.TopActionBarView>
+
+        <com.king.smart.car.mysmartcarapp.ui.view.SwipeListView.SwipeMenuListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_top_action_bar"
+            android:divider="@null"
+            android:scrollbars="none">
+
+        </com.king.smart.car.mysmartcarapp.ui.view.SwipeListView.SwipeMenuListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_record_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.king.smart.car.mysmartcarapp.ui.view.RecordAudioView
+            android:id="@+id/recordAudioView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.king.smart.car.mysmartcarapp.ui.view.RecordAudioView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

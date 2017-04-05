@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pq">
+
+        <TextView
+            android:id="@+id/tv_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="跑"
+            android:textColor="@color/color_ffffff"
+            android:textSize="180sp" />
+
+        <TextView
+            android:id="@+id/tv_run_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_run"
+            android:layout_marginBottom="30dp"
+            android:layout_toRightOf="@+id/tv_run"
+            android:text="步"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_run"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="带上手机   随心而动"
+            android:textColor="@color/color_99666666" />
+    </RelativeLayout>
+
+</RelativeLayout>

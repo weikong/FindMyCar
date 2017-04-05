@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardUseCompatPadding="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="40dp"
+            android:layout_height="220dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Run" />
+            <TextView
+                android:id="@+id/tv_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="-12dp"
+                android:layout_below="@+id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:textSize="90sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="27" />
+            <TextView
+                android:id="@+id/tv_lianxu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_days"
+                android:layout_toLeftOf="@+id/tv_days"
+                android:layout_marginBottom="20dp"
+                android:textSize="12sp"
+                android:text="连续坚持" />
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_days"
+                android:layout_toRightOf="@+id/tv_days"
+                android:layout_marginBottom="20dp"
+                android:textSize="12sp"
+                android:text="天" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_days"
+                android:layout_marginTop="-2dp"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:text="2016/12/02" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/ic_bookmark_24dp" />
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

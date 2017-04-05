@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/color_bg_weather"
+    android:minHeight="45dp">
+
+    <TextView
+        android:id="@+id/tv_action_left"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_transparent_8fc49a_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:text="@string/action_return"
+        android:textColor="@color/color_ffffff"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_action_right"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_transparent_8fc49a_selector"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/color_ffffff" />
+
+    <TextView
+        android:id="@+id/tv_action_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/tv_action_right"
+        android:layout_toRightOf="@+id/tv_action_left"
+        android:ellipsize="middle"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="闹钟"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+</RelativeLayout>

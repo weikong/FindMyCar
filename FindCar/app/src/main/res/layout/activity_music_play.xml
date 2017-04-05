@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pq">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_media_seek_bar">
+
+        <RelativeLayout
+            android:id="@+id/layout_media_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_media_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_f4f4f4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_media_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_media_title"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_f4f4f4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_media_top">
+
+            <com.king.smart.car.mysmartcarapp.ui.view.MediaDiskView
+                android:id="@+id/view_media_disk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+            </com.king.smart.car.mysmartcarapp.ui.view.MediaDiskView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.king.smart.car.mysmartcarapp.ui.view.MediaSeekBarView
+        android:id="@+id/view_media_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_media_control">
+
+    </com.king.smart.car.mysmartcarapp.ui.view.MediaSeekBarView>
+
+    <com.king.smart.car.mysmartcarapp.ui.view.MediaControlView
+        android:id="@+id/view_media_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.king.smart.car.mysmartcarapp.ui.view.MediaControlView>
+</RelativeLayout>

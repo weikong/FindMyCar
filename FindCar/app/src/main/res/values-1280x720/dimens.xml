@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_circle_big">120dp</dimen>
+    <dimen name="btn_circle_small">90dp</dimen>
+    <dimen name="view_main_pager">220dp</dimen>
+</resources>
